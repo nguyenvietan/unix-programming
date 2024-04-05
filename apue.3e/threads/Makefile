@@ -23,7 +23,7 @@ ifeq "$(PLATFORM)" "solaris"
   EXTRALIBS=-lpthread -lrt
 endif
 
-PROGS = badexit2 cleanup exitstatus threadid
+PROGS = badexit2 cleanup exitstatus threadid mutex1
 
 all:	$(PROGS) condvar.o maketimeout.o mutex1.o mutex2.o mutex3.o rwlock.o $(TLOCK) $(BAR)
 
